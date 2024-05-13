@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+version = "0.1.0"
+name = "time-tracker"
+description = "A simple tool for tracking time spent"
+requires-python = ">=3.11"
+dependencies = ["tzlocal"]
+
+[project.scripts]
+my_script = "time_tracker.main:main"
