@@ -10,4 +10,7 @@ requires-python = ">=3.11"
 dependencies = ["tzlocal"]
 
 [project.scripts]
-my_script = "time_tracker.main:main"
+track = "time_tracker.main:main"
+
+[tool.mypy]
+strict = true
